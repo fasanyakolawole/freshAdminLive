@@ -28,7 +28,7 @@
        <th>Total Company Gain</th>
        <th>Total Cleaners Pay Out</th>
        <th>Total online Clients</th>
-       <th>Total online Admin Users</th>
+       <th>Total online Cleaners</th>
        <th>Total Active Jobs</th>
        <th>Total confirmed Jobs</th>
        <th>Total User Canceled Jobs</th>
