@@ -24,14 +24,14 @@
     <table v-if="!page" class="table table-bordered ">
    <thead>
      <tr class='alert-info'>
-       <th>Total Cash Income</th>
-       <th>Total Company Gain</th>
-       <th>Total Cleaners Pay Out</th>
-       <th>Total online Clients</th>
-       <th>Total online Cleaners</th>
-       <th>Total Active Jobs</th>
-       <th>Total confirmed Jobs</th>
-       <th>Total User Canceled Jobs</th>
+       <th>Income</th>
+       <th>Gain</th>
+       <th>PayOut</th>
+       <th>Clients</th>
+       <th>Cleaners</th>
+       <th>Active Jobs</th>
+       <th>Confirmed Jobs</th>
+       <th>Canceled Jobs</th>
      </tr>
    </thead>
    <tbody>

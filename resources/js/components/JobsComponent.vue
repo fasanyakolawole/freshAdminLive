@@ -11,15 +11,15 @@
             <th>Date</th>
             <th>Postcode</th>
             <th>Address</th>
-            <th>Cleaning Services</th>
+            <th>Services</th>
             <th>Hours</th>
             <th>Mobile</th>
             <th>Charge</th>
-            <th>Company Take</th>
-            <th>Cleaner's Take</th>
-            <th>Cleaners Name</th>
-            <th>Client Name</th>
-            <th>Job Id</th>
+            <th>Gain</th>
+            <th nowrap>Cleaner's Take</th>
+            <th>Cleaner</th>
+            <th>Client</th>
+            <th>Id</th>
 
         </tr>
         </thead>

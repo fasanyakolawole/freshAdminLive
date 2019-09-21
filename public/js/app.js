@@ -37750,7 +37750,7 @@ var staticRenderFns = [
         _vm._v(" "),
         _c("th", [_vm._v("Address")]),
         _vm._v(" "),
-        _c("th", [_vm._v("Cleaning Services")]),
+        _c("th", [_vm._v("Services")]),
         _vm._v(" "),
         _c("th", [_vm._v("Hours")]),
         _vm._v(" "),
@@ -37758,15 +37758,15 @@ var staticRenderFns = [
         _vm._v(" "),
         _c("th", [_vm._v("Charge")]),
         _vm._v(" "),
-        _c("th", [_vm._v("Company Take")]),
+        _c("th", [_vm._v("Gain")]),
         _vm._v(" "),
-        _c("th", [_vm._v("Cleaner's Take")]),
+        _c("th", { attrs: { nowrap: "" } }, [_vm._v("Cleaner's Take")]),
         _vm._v(" "),
-        _c("th", [_vm._v("Cleaners Name")]),
+        _c("th", [_vm._v("Cleaner")]),
         _vm._v(" "),
-        _c("th", [_vm._v("Client Name")]),
+        _c("th", [_vm._v("Client")]),
         _vm._v(" "),
-        _c("th", [_vm._v("Job Id")])
+        _c("th", [_vm._v("Id")])
       ])
     ])
   }
@@ -50170,8 +50170,8 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! C:\xampp\htdocs\blog\resources\js\app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! C:\xampp\htdocs\blog\resources\sass\app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! C:\xampp\htdocs\freshAdminLive\resources\js\app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! C:\xampp\htdocs\freshAdminLive\resources\sass\app.scss */"./resources/sass/app.scss");
 
 
 /***/ })
