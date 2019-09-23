@@ -37396,7 +37396,7 @@ var render = function() {
                 _vm._v(" "),
                 _c("td", [_vm._v(_vm._s(x.email))]),
                 _vm._v(" "),
-                _c("td", [_vm._v(_vm._s(x.created_at))]),
+                _c("td", [_vm._v(_vm._s(x.date))]),
                 _vm._v(" "),
                 _vm._m(1, true),
                 _vm._v(" "),

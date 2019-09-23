@@ -23,7 +23,7 @@
             <td> {{ x.id }} </td>
             <td>{{ x.name }}</td>
             <td>{{ x.email }}</td>
-            <td>{{ x.created_at }}</td>
+            <td>{{ x.date }}</td>
 
             <td><button  class='btn-info'>View</button></td>
             <td><button  class='btn-info'>View</button></td>

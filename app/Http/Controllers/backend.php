@@ -12,6 +12,9 @@ class backend extends Controller
   //users related end points
    public function getClients(){
        $getCients = User::where('professional',0)->orderBy('name')->paginate(10);
+       foreach ($getCients as  $value) {
+         $value->date= $value->created_at->format('d/m/Y') ?? '';
+       }
        return response()->json([
             $getCients
        ],200);
@@ -19,6 +22,9 @@ class backend extends Controller
 
    public function getCleaners(){
        $getCients = User::where('professional',1)->where('active',true)->orderBy('name')->paginate(10);
+       foreach ($getCients as  $value) {
+         $value->date= $value->created_at->format('d/m/Y') ?? '';
+       }
        return response()->json([
             $getCients
        ],200);
@@ -26,6 +32,9 @@ class backend extends Controller
 
    public function inactiveCleaners(){
        $getCients = User::where('professional',1)->whereNull('active')->orderBy('name')->paginate(10);
+       foreach ($getCients as  $value) {
+         $value->date= $value->created_at->format('d/m/Y') ?? '';
+       }
        return response()->json([
             $getCients
        ],200);
