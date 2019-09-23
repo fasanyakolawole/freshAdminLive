@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Job extends Model
 {
-    public function getnames(){
-      return 123;
-    }
+  protected $dates = [
+         'job_date',
+     ];
 }

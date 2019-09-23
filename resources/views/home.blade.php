@@ -10,8 +10,7 @@
         <ul class="nav">
             <li  @click="page=null" class="nav-item form-control"><a class="nav-link " style="color: lightblue" href="javascript:" ><b>Basic Summary</b></a></li>
             <li @click="page='List Of All Online Users'" class="nav-item form-control"><a class="nav-link " style="color: lightblue" href="javascript:" ><b>List Of All Online Users</b></a></li>
-            <li @click="page='List Of All Online Jobs'" class="nav-item form-control"><a class="nav-link " style="color: lightblue" href="javascript:" ><b>List Of All Online Jobs</b></a></li>
-            {{-- <li  @click="page='Account'" class="nav-item form-control"><a class="nav-link" style="color: lightblue"  href="javascript:"><b>Account </b></a></li> --}}
+            <li @click="page='List Of All Jobs'" class="nav-item form-control"><a class="nav-link " style="color: lightblue" href="javascript:" ><b>List Of All Jobs</b></a></li>
             <li  @click="page='Pending Payouts'" class="nav-item form-control"><a class="nav-link" style="color: lightblue"  href="javascript:"><b>Pending Payouts</b></a></li>
             <li  @click="page='Payouts'" class="nav-item form-control"><a class="nav-link" style="color: lightblue"  href="javascript:"><b>Payouts</b></a></li>
             <li  @click="page=''" class="nav-item form-control"><a class="nav-link" style="color: lightblue"  href="javascript:"></a></li>
@@ -49,7 +48,7 @@
  </table>
         <h4 v-else><u>@{{ page }}</u></h4>
         <example-component post-title=33 v-if="page==='List Of All Online Users'"></example-component>
-        <jobs-component  v-if="page==='List Of All Online Jobs'"></jobs-component>
+        <jobs-component  v-if="page==='List Of All Jobs'"></jobs-component>
     </div>
     </div>
 

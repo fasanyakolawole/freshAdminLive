@@ -25,7 +25,7 @@
         </thead>
         <tbody>
         <tr class='alert-warning' v-for="x in orderedUsers" >
-            <td> {{ x.job_date }} </td>
+            <td> {{ x.date }} </td>
             <td>{{ x.job_postcode }}</td>
             <td >{{ x.job_address }}</td>
             <td >{{ x.job_type }}</td>
@@ -34,8 +34,8 @@
             <td >{{ x.total_charge }}</td>
             <td >{{ x.company_take }}</td>
             <td >{{ x.professional_take }}</td>
-            <td >{{x.cleaners_id}}</td>
-            <td >{{getName( x.client_id)}} </td>
+            <td >{{x.cleaner_name}}</td>
+            <td >{{ x.client_name}} </td>
             <td >{{ x.id }}</td>
         </tr>
         </tbody>
@@ -44,7 +44,7 @@
         <div v-if="!moreInfoTab" align="center">
          <!--all paginations -->
             <ul class="pagination">
-                <li  v-for="x in pagination"  @click="paginateRequest(x)">  <a href="#">{{x}}</a> </li>
+                <li v-if='x !=1'  v-for="x in pagination"  @click="paginateRequest(x)">  <a href="#">{{x}}</a> </li>
             </ul>
         </div>
 
@@ -145,16 +145,6 @@
                     });
             },
 
-            getName: function (id) {
-                 // axios.get("\getName?id="+id)
-                 //     .then(response => {
-                 //       this.success = response;
-                 //     })
-                 //     .catch(error =>{
-                 //         console.log(error)
-                 //     });
-                 return id;
-            },
 
 
             // activateUser: function (id) {
@@ -186,5 +176,6 @@
                   //text = "I have never heard of that fruit...";
               }
             }
-        }}
+        }
+      }
 </script>

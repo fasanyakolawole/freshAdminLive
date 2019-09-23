@@ -49,37 +49,60 @@ class backend extends Controller
 
 /////jobs related endpoints
    public function awaitingJobs(){
-       $getCients = Job::where('status',1)->paginate(10);
+       $getJobs = Job::where('status',1)->paginate(10);
+
+       foreach ($getJobs as  $value) {
+         $value->date= $value->job_date->format('d/m/Y') ?? '';
+         $value->client_name= User::find($value->client_id)->name;
+        $value->cleaner_name= User::find($value->cleaners_id)->name ?? 'awaiting';
+       }
        return response()->json([
-            $getCients
+            $getJobs
        ],200);
    }
 
    public function activeJobs(){
-       $getCients = Job::where('status',2)->paginate(10);
+       $getJobs = Job::where('status',2)->paginate(10);
+
+       foreach ($getJobs as  $value) {
+         $value->date= $value->job_date->format('d/m/Y') ?? '';
+         $value->client_name= User::find($value->client_id)->name;
+        $value->cleaner_name= User::find($value->cleaners_id)->name ?? 'awaiting';
+       }
+
        return response()->json([
-            $getCients
+            $getJobs
        ],200);
    }
 
+
    public function completedJobs(){
-       $getCients = Job::where('status',3)->paginate(10);
+       $getJobs = Job::where('status',3)->paginate(10);
+
+       foreach ($getJobs as  $value) {
+         $value->date= $value->job_date->format('d/m/Y') ?? '';
+         $value->client_name= User::find($value->client_id)->name;
+        $value->cleaner_name= User::find($value->cleaners_id)->name ?? 'awaiting';
+       }
+
        return response()->json([
-            $getCients
+            $getJobs
        ],200);
    }
 
    public function cancledJobs(){
-       $getCients = Job::where('status',0)->paginate(10);
+       $getJobs = Job::where('status',0)->paginate(10);
+
+       foreach ($getJobs as  $value) {
+         $value->date= $value->job_date->format('d/m/Y');
+         $value->client_name= User::find($value->client_id)->name;
+         $value->cleaner_name= User::find($value->cleaners_id)->name ?? 'awaiting';
+       }
+
        return response()->json([
-            $getCients
+            $getJobs
        ],200);
    }
 
-   public function getName(Request $request){
-       $getName = User::find($request->get('id'));
-       return response()->json([
-            $getName
-       ],200);
-   }
+
 }
