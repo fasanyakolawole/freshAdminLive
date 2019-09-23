@@ -13,15 +13,24 @@
             <th>Name</th>
             <th>Email</th>
             <th>Date Registered</th>
+            <th>Identity</th>
+            <th>CRB</th>
             <th>Active</th>
         </tr>
         </thead>
         <tbody>
         <tr class='alert-warning' v-for="x in orderedUsers" >
-            <td @click="moreInfoTab=true"> {{ x.id }} </td>
-            <td @click="moreInfoTab=true">{{ x.name }}</td>
-            <td @click="moreInfoTab=true">{{ x.email }}</td>
-            <td @click="moreInfoTab=true">{{ x.created_at }}</td>
+            <td> {{ x.id }} </td>
+            <td>{{ x.name }}</td>
+            <td>{{ x.email }}</td>
+            <td>{{ x.created_at }}</td>
+
+            <td><button  class='btn-info'>View</button></td>
+            <td><button  class='btn-info'>View</button></td>
+
+            <!-- <td @click="moreInfoTab=true"></td>
+            <td @click="moreInfoTab=true"></td> -->
+
             <td><input @click='activateUser(x.id)' :checked='x.active' type='checkbox'></td>
         </tr>
         </tbody>
@@ -35,7 +44,7 @@
         </div>
 
 <!--more info tab more information about user-->
-        <div v-if="moreInfoTab" class="well">
+        <!-- <div v-if="moreInfoTab" class="well">
             <a href="javascript:"> <h4 style="background: black;color:white" @click="moreInfoTab=false">Back to list</h4></a>
             Name <br/> <br/>
             Date Registered  <br/> <br/>
@@ -44,7 +53,7 @@
             Location  <br/> <br/>
             Attached Document  Identity  <br/> <br/>
             Attached Document  CRB document   <br/> <br/>
-        </div>
+        </div> -->
     </div>
 </template>
 
