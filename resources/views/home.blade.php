@@ -1,11 +1,13 @@
 @extends('layouts.app')
 
 @section('content')
+     <link rel="icon" href="favicon.png">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 <div  class="container-fluid">
 <div class="row">
+  {{-- <img src='favicon.png'> --}}
     <div  class="col-sm-2">
         <ul class="nav">
             <li  @click="page=null" class="nav-item form-control"><a class="nav-link " style="color: lightblue" href="javascript:" ><b>Basic Summary</b></a></li>
